@@ -1,28 +1,105 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Camp‑Kit | Camping‑Gear Rentals Toronto</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="description" content="Affordable camping‑gear rentals delivered across the GTA. Based in East York, Toronto. Beginner‑friendly bundles, same‑day delivery, zero stress." />
-  </head>
-  <body class="bg-white text-gray-800 font-sans">
-    <!-- NAV -->
-    <nav class="flex items-center justify-between px-6 py-4 shadow-md">
-      <span class="text-2xl font-bold tracking-tight">Camp‑Kit</span>
-      <button id="menuBtn" class="md:hidden p-2 focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-      <ul id="navLinks" class="hidden md:flex gap-6">
-        <li><a href="#how" class="hover:text-emerald-600">How It Works</a></li>
-        <li><a href="#kits" class="hover:text-emerald-600">Rental Kits</a></li>
-        <li><a href="#faq" class="hover:text-emerald-600">FAQ</a></li>
-        <li><a href="#contact" class="hover:text-emerald-600">Contact</a></li>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Camp‑Kit | Premium Camping‑Gear Rentals in Toronto</title>
+<script src='https://cdn.tailwindcss.com'></script>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' rel='stylesheet'>
+<meta name='description' content='Rent professionally cleaned, top‑brand camping gear delivered anywhere in the Greater Toronto Area. Same‑day delivery, flexible bundles, zero hassle.'>
+<style>body{font-family:'Inter',sans-serif}</style>
+</head>
+<body class='bg-white text-gray-800'>
+
+<!-- NAV -->
+<nav class='fixed top-0 inset-x-0 z-30 bg-white/80 backdrop-blur shadow-sm'>
+ <div class='max-w-7xl mx-auto flex items-center justify-between px-6 py-3'>
+   <a href='#top' class='text-2xl font-bold tracking-tight text-emerald-600'>Camp‑Kit</a>
+   <button id='menuBtn' class='md:hidden p-2' aria-label='Toggle navigation'>
+     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/></svg>
+   </button>
+   <ul id='navLinks' class='hidden md:flex gap-8 text-sm font-medium'>
+     <li><a href='#how' class='hover:text-emerald-600'>How It Works</a></li>
+     <li><a href='#kits' class='hover:text-emerald-600'>Rental Kits</a></li>
+     <li><a href='#faq' class='hover:text-emerald-600'>FAQ</a></li>
+     <li><a href='#contact' class='hover:text-emerald-600'>Contact</a></li>
+   </ul>
+ </div>
+</nav>
+
+<!-- HERO -->
+<header id='top' class='pt-20'>
+  <div class='relative h-[70vh] flex items-center justify-center text-center text-white'>
+    <img src='https://images.unsplash.com/photo-1508057198894-247b23fe5ade?auto=format&fit=crop&w=1600&q=60' alt='Forest campsite' class='absolute inset-0 object-cover w-full h-full'>
+    <div class='absolute inset-0 bg-gradient-to-b from-black/60 to-black/30'></div>
+    <div class='relative z-10 px-6'>
+      <h1 class='text-4xl md:text-6xl font-extrabold mb-6'>Toronto’s Trusted Camping‑Gear Rental</h1>
+      <p class='max-w-2xl mx-auto text-lg md:text-xl mb-8'>Premium tents, sleeping bags & kits delivered to your door — enjoy the outdoors without the upfront cost.</p>
+      <a href='#kits' class='inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full px-10 py-4'>Browse Kits</a>
+    </div>
+  </div>
+</header>
+
+<!-- HOW IT WORKS -->
+<section id='how' class='py-24 px-6 max-w-7xl mx-auto'>
+  <h2 class='text-3xl md:text-4xl font-bold text-center mb-16'>How It Works</h2>
+  <div class='grid md:grid-cols-3 gap-12 text-center'>
+    <div><div class='mx-auto h-14 w-14 flex items-center justify-center rounded-full bg-emerald-50 text-emerald-600 text-xl font-bold'>1</div><h3 class='font-semibold mt-4'>Pick Your Kit</h3><p>Select a bundle sized for your group.</p></div>
+    <div><div class='mx-auto h-14 w-14 flex items-center justify-center rounded-full bg-emerald-50 text-emerald-600 text-xl font-bold'>2</div><h3 class='font-semibold mt-4'>Delivery / Pickup</h3><p>Same‑day GTA delivery or free pickup.</p></div>
+    <div><div class='mx-auto h-14 w-14 flex items-center justify-center rounded-full bg-emerald-50 text-emerald-600 text-xl font-bold'>3</div><h3 class='font-semibold mt-4'>Camp & Return</h3><p>We clean & safety‑check everything after.</p></div>
+  </div>
+</section>
+
+<!-- RENTAL KITS (abbreviated) -->
+<section id='kits' class='py-24 bg-gray-50 px-6'>
+  <h2 class='text-3xl md:text-4xl font-bold text-center mb-16'>Rental Kits</h2>
+  <div class='grid md:grid-cols-3 gap-10 max-w-7xl mx-auto'>
+    <article class='group bg-white rounded-3xl shadow-lg flex flex-col overflow-hidden'>
+      <img src='https://images.unsplash.com/photo-1508766206392-8bd5cf550d1e?auto=format&fit=crop&w=600&q=60' alt='2‑Person Kit' class='h-52 w-full object-cover group-hover:scale-105 transition'>
+      <div class='p-8 flex-1 flex flex-col'>
+        <h3 class='text-xl font-semibold mb-3'>2‑Person Weekend Kit</h3>
+        <p class='text-sm text-gray-600 flex-1 mb-4'>Lightweight tent, 2 sleeping bags & mats, stove, cookware, lantern.</p>
+        <span class='text-lg font-bold mb-6'>$59 / 2 nights</span>
+        <a href='mailto:rent@camp-kit.ca?subject=Booking 2P Kit' class='mt-auto inline-block bg-emerald-500 hover:bg-emerald-600 text-white rounded-full px-6 py-3'>Book Now</a>
+      </div>
+    </article>
+    <!-- Add other kit cards here -->
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id='faq' class='py-24 px-6 max-w-5xl mx-auto'>
+  <h2 class='text-3xl md:text-4xl font-bold text-center mb-12'>FAQ</h2>
+  <details class='group rounded-xl bg-gray-100 p-6 mb-4 open:bg-emerald-50'>
+    <summary class='cursor-pointer flex justify-between font-medium'>How far in advance should I book?<svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5 group-open:rotate-180 transition' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/></svg></summary>
+    <p class='mt-2 text-sm'>Weekends fill up quickly—book at least 48 hours ahead. Same‑day may be possible; contact us.</p>
+  </details>
+  <details class='group rounded-xl bg-gray-100 p-6 open:bg-emerald-50'>
+    <summary class='cursor-pointer flex justify-between font-medium'>Are items cleaned after each rental?<svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5 group-open:rotate-180 transition' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/></svg></summary>
+    <p class='mt-2 text-sm'>Yes—sleeping bags are laundered, cookware sanitized, and tents UV‑dried & inspected.</p>
+  </details>
+</section>
+
+<!-- CONTACT -->
+<section id='contact' class='py-24 bg-emerald-600 text-emerald-50'>
+  <div class='max-w-7xl mx-auto px-6 md:flex md:items-center md:justify-between'>
+    <div class='md:w-1/2'>
+      <h2 class='text-3xl md:text-4xl font-bold mb-6'>Ready to camp?</h2>
+      <p class='mb-6'>Based in <strong>East York, Toronto</strong>. Pick‑ups by appointment only—book via email or phone.</p>
+      <ul class='space-y-2 text-lg'>
+        <li><span class='font-medium'>Email:</span> <a href='mailto:rent@camp-kit.ca' class='underline'>rent@camp-kit.ca</a></li>
+        <li><span class='font-medium'>Phone:</span> <a href='tel:+16477000123' class='underline'>+1 647‑700‑0123</a></li>
       </ul>
-    </nav>
-    <!-- Body truncated for brevity -->
-  </body>
-</html>
+    </div>
+    <iframe class='md:w-1/2 w-full h-80 rounded-2xl shadow-lg mt-10 md:mt-0' loading='lazy' src='https://maps.google.com/maps?q=43.719607,-79.3377193&z=15&output=embed'></iframe>
+  </div>
+</section>
+
+<footer class='py-10 text-center text-sm bg-gray-900 text-gray-500'>© <span id='year'></span> Camp‑Kit • Camping‑Gear Rentals Toronto</footer>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('hidden')});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
